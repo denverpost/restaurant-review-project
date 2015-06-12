@@ -1,0 +1,306 @@
+/* Imported styles - clean up */
+
+.social-icons {
+    height: 38px;
+    width: 38px;
+    border-radius: 50px;
+    float: right;
+    margin-right: 5px;
+    margin-bottom: 15px;
+}
+
+#top-bar-margin {
+    margin-bottom: 20px;
+}
+
+#nav-bar-title {
+    font-family: 'Georgia', serif;
+    font-size: 24px;
+}
+
+#nav-bar-dropdown {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.share-buttons {
+    height: 40px;
+    width: 40px;
+}
+
+li.share-list {
+    display: inline;
+    list-style-type: none;
+    float: right;
+    padding-right: 5px;
+}
+
+img.nav-logo {
+    height: 35px;
+    padding: 10px 25px 0px 10px;
+}
+
+img.footer-logo {
+    margin-bottom: 30px;
+}
+
+.scrbbl-embed {
+    width: 100% !important;
+    height: 745px !important;
+    margin-bottom: 25px !important;
+}
+
+iframe.slideshow {
+    width: 100% !important;
+    height: 1275px;
+}
+
+#ad-space {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+img.main {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 52px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+h3.subhead-panel {
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 29px;
+    color: #808080;
+    margin-bottom: 2px;
+}
+
+h3.subhead {
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 29px;
+    color: #808080;
+}
+
+blockquote {
+    font-family: Georgia, serif;
+    font-size: 34px;
+    line-height: 39px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+cite {
+    font-family: Georgia, serif;
+    font-size: 16px !important;
+    line-height: 25px;
+    text-align: right;
+}
+
+.section-header {
+    background-color: rgba(255, 119, 51, 1.0);
+    height: 35px;
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 2.5px;
+    margin-bottom: 30px;
+}
+
+.carousel-caption {
+    height: 175px!important;
+}
+
+.credit {
+    font-size: 11px;
+    font-style: italic;
+    text-align: right;
+}
+
+@media screen and (max-width: 750px) {
+    #ad-space {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #mobile-image {
+        display: none !important;
+    }
+}
+
+hr.panel-hr {
+    border: none;
+    height: 4px;
+    background-color: #808080;
+}
+p.anchor-links {
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 16px;
+}
+#table-top-margin {
+    margin-top: 20px;
+}
+p.intro {
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 22px;
+    line-height: 30px;
+}
+.review-link {
+    float: right;
+    }
+a.review-link:link {
+    background: rgba(129,35,23,1.0);
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 3px 7px 3px 7px;
+    }
+    a.review-link:hover {
+    background: rgba(129,35,23,.5);
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 3px 7px 3px 7px;
+    }
+    a.review-link:visited {
+    background: rgba(129,35,23,1.0);
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 3px 7px 3px 7px;
+    }
+    h2.main-hed {
+        font-family: "Oswald", Arial, sans-serif;
+    }
+
+/* Map styles */
+
+            /* @media only screen and (max-width: 320px){
+  img#thumbnail { width:50px; }
+} */
+
+#thumbnail {
+  width: 231px;
+  height: 150px;
+}  
+
+/* a:link {
+  font-family: 'Droid Sans', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #4682B4;
+  text-decoration: none;
+} */
+
+/* a:visited {
+  color: #4682B4;
+}  */
+
+a:hover {
+  color: red;
+}
+
+/* a.review:link {
+  font-family: 'Droid Sans', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  text-color: white;
+} */
+
+a.review:visited {
+  color: #4682B4;
+}  
+
+a.review:hover {
+  color: red;
+}
+
+#popup {
+  font-family: 'Droid Sans', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  margin-bottom: 5px;
+}
+
+#stars {
+  width: auto; /* was 225 */
+  height: 20px; /* was 40 */
+  margin-top: 0px;
+}
+
+#menustars {
+  width: auto;
+  height: 20px;
+  color: #ccc;
+}
+
+#submenustars {
+  width: auto;
+  height: 20px;
+  padding-left: 15px;
+}
+
+#modalstars {
+  width: auto;
+  height: 30px;
+  margin-right: -70px;
+  margin-top: -4px;
+}
+
+#menuheader {
+  font-weight: bold;
+  padding-left: 25px;
+}
+  
+#map {
+  width: 100%;
+  height: 500px;
+}
+
+.gm-style-iw {
+  overflow: hidden !important;
+  max-width: 231px;
+}
+
+img {
+  max-width: none;
+}
+
+.mapsheet-popup {
+  overflow-x: hidden;
+}
+
+.mapsheet-popup h2 {
+  font-family: 'Droid Sans', Arial, sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+
+.button {
+  padding: 10px;
+  margin-bottom: 0px;
+}
+
+#map-container {
+    border: solid 2px #777;
+}
+
+#table-container {
+    margin-top: 25px;
+}
