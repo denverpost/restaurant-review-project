@@ -152,8 +152,12 @@
     </div> <!-- /#header-image div -->
     
     <div class="row">
-        <div class="large-4 medium-4 small-12 columns">
-        <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent condimentum pretium enim sit amet lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam placerat lorem a massa iaculis scelerisque. Mauris fermentum finibus mi at porta. Nullam egestas odio urna, vitae consequat eros iaculis non. Integer volutpat accumsan odio a auctor. Nulla eget magna varius, tincidunt arcu sit amet, sollicitudin ex.</p>
+        <div class="large-5 medium-5 small-12 columns">
+        <h2 class="intro-hed">Where to eat?</h2>
+        <p class="intro">Take a look through the last year and a half or so of The Denver Post&rsquo;s restaurant reviews to see what&rsquo;s new, what&rsquo;s great and what to expect. Use the map to </p>
+        <hr>
+        <h2 class="intro-hed">Need more?</h2>
+        <p class="intro">Find us on <a href="https://www.facebook.com/DenverPostFood">Facebook</a>, <a href="https://instagram.com/denverpostfood/">Instagram</a> and at <a href="http://www.denverpost.com/food">DenverPost.com/Food</a>, and follow Denver Post restaurant critic <a href="https://twitter.com/williamporterdp">William Porter</a> and food writer <a href="https://twitter.com/COConnorDP">Colleen O&rsquo;Connor</a> on Twitter while you&rsquo;re at it.</p>
         </div>
         
         <!-- Beginning of map code -->
@@ -161,7 +165,7 @@
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
         <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js"></script>        
         
-        <!-- For Leaflet -->
+        <!-- If using Leaflet -->
         <script src="http://cdn.leafletjs.com/leaflet-0.4.5/leaflet.js"></script>
         <script src="http://matchingnotes.com/javascripts/leaflet-google.js"></script>
 
@@ -169,37 +173,35 @@
         <script type="text/javascript" src="js/tabletop.js"></script>
         <script type="text/javascript" src="js/mapsheet.js"></script>
         
-        <div class="large-8 medium-8 small-12 columns">
-
+        <div class="large-7 medium-7 small-12 columns">
         <div id="map-container">
-
-        <!-- This is where the map will go -->
-        <div id="map"></div>   
         
-        <!-- This is the popup you'll get when you click a marker. 
-             {{these}} are columns in your spreadsheet -->
+        <!-- This is where the map will go -->
+        <div id="map"></div>
+        
+        <!-- This is the popup you'll get when you click a marker. {{these}} are columns in your spreadsheet -->
         <script id="popup-template" type="text/x-handlebars-template">
           <img id="thumbnail" src="{{image}}">
           <h2>{{restaurant}}</h2>
           <p id="popup">{{category}}<br />
           <img id="stars" src="{{starsicon}}"></p>
           <p id="popup">{{address}}, {{city}}<br />
-          <a href="http://www.{{restaurantlink}}"target="_blank">{{restaurantlink}}</a><br />
+          <a href="http://www.{{restaurantlink}}" target="_top">{{restaurantlink}}</a><br />
           {{phone}} &bull; <a href="https://www.google.com/maps/dir//{{address}},+{{city}},+co">Directions</a></p>
-          <p><a href="{{reviewlink}}"target="_blank" class="button radius">Read review&nbsp; &#187;</a></p>
+          <p><a href="{{reviewlink}}"target="_top" class="button radius">Read review&nbsp; &#187;</a></p>
         </script>
         
-        <!-- Okay, time to do this! -->
         <script type="text/javascript">
           $(document).ready( function() {       
-            // Make sure the spreadsheet is published!
+            
+            // Make sure the spreadsheet is published
             var published_spreadsheet_url = 'https://docs.google.com/spreadsheet/ccc?key=0Ank6vqQeY7CJdDQwMVVtZFlMdG1JU0xVdENIMFdjYXc#gid=0'; 
 
-            // Let's get the popup template and compile it using Handlebars
-            var source   = $("#popup-template").html();
+            // Get the popup template and compile it using Handlebars
+            var source = $("#popup-template").html();
             var template = Handlebars.compile(source);
 
-            // OK, now let's make the map
+            // Make the map
             var map = Mapsheet ({
               provider: Mapsheet.Providers.Google,
               mapOptions: {
@@ -215,9 +217,9 @@
                 mapTypeControl: false,
               },
               key: published_spreadsheet_url,
-              element: "map",          
+              element: "map",
               popupTemplate: template
-            });
+            });            
           });
         </script>
         </div>
@@ -226,6 +228,7 @@
 
     <div class="row">
         <div class="large-12 medium-12 small-12 columns" id="table-container">
+
             <!-- Table headers - how you want them to look on page -->
             <table id="searchable-table" class="display responsive no-wrap" width="100%">
                 <thead>
@@ -253,27 +256,27 @@
 
     <div class="row">
         <div class="large-12 medium-12 small-12 columns">
-        <h2><a href="https://instagram.com/denverpostfood/">@denverpostfood</a> on Instagram...</h2>
+        <h2 class="intro-hed"><a href="https://instagram.com/denverpostfood/">@denverpostfood</a> on Instagram...</h2>
 
-        <!-- INSTANSIVE WIDGET -->
+        <!-- Instansive widget -->
         <script src="//instansive.com/widget/js/instansive.js"></script><iframe src="//instansive.com/widgets/91876b75d3c7a7f9b71171b6f711616d6cc2d644.html" id="instansive_91876b75d3" name="instansive_91876b75d3"  scrolling="no" allowtransparency="true" class="instansive-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
         </div>
     </div>
 
-    <!-- Templates -->
+    <!-- Templates for table-->
     <script id="datatable-template" type="text/x-handlebars-template">
         {{#each elements}} // The following correspond to spreadsheet headers
         <tr>
             <td data-title="Restaurant:"><a href="http://{{ restaurantlink }}" target="_top">{{ restaurant }}</a></td>
             <td data-title="Category:">{{ category }}</td>
-            <td data-title="Address:">{{ address }}</td>
+            <td data-title="Address:"><a href="https://www.google.com/maps/dir//{{address}},+{{city}},+co">{{address}}</a></td>
             <td data-title="City:">{{ city }}</td>
             <td data-title="Stars:">{{ stars }}&nbsp;<a class="review-link" href="{{ reviewlink }}" target="_top"><span class="review-link">Review</span></a></td>
         </tr>
         {{/each}}
     </script>
 
-    <!-- Custom JS -->
+    <!-- JS for DataTables -->
     <script src="http://extras.denverpost.com/frameworks/tables/datatables/js/base.js"></script>
     <script src="js/restaurant-review-table.js"></script>
 

@@ -183,8 +183,9 @@ a.review-link:link {
     text-decoration: none;
     padding: 3px 7px 3px 7px;
     }
-    h2.main-hed {
+    h2.intro-hed {
         font-family: "Oswald", Arial, sans-serif;
+        font-style: italic;
     }
     h2 {
         font-family: "Oswald", Arial, sans-serif;
