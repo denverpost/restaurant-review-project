@@ -1,12 +1,21 @@
 /* Imported styles - clean up */
 
 .social-icons {
-    height: 38px;
-    width: 38px;
+    height: 48px;
+    width: 48px;
     border-radius: 50px;
     float: right;
     margin-right: 5px;
     margin-bottom: 15px;
+}
+
+.social-icons-footer {
+    height: 55px;
+    width: 55px;
+    border-radius: 50px;
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 #top-bar-margin {
@@ -330,7 +339,7 @@ img {
 
 #header-image::after {
   content: "";
-  background: url(/images/zoe-ma-ma.jpg);
+  background: url(//extras.denverpost.com/restaurant-review-guide/images/zoe-ma-ma.jpg);
   opacity: 0.5;
   top: 0;
   left: 0;
@@ -366,6 +375,16 @@ img {
 img#phone-photo {
   width: 100%;
   height: auto;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.main-hed-phone {
+  font-family: "Oswald", Arial, sans-serif;
+    font-size: 62px;
+    font-weight: bold;
+    line-height: 70px;
+    letter-spacing: 1px;
 }
 
 /* ----------------------------- Adverts ----------------------------- */ 
