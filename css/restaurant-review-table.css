@@ -204,7 +204,7 @@ a.review-link:link {
     }
     h2.intro-hed {
         font-family: "Oswald", Arial, sans-serif;
-        font-style: italic;
+        margin-bottom: 3px;
     }
     h2 {
         font-family: "Oswald", Arial, sans-serif;
@@ -348,10 +348,11 @@ img {
   position: absolute;
   z-index: -1;
   background-attachment:fixed;
-  background-position: relative;
   background-repeat: no-repeat;
+  background-size: cover;
   margin-bottom: 50px;
   height: 600px;
+  border-bottom: solid rgba(0,0,0,.4) 5px;
 }
 
 @media screen and (max-width: 500px) {
