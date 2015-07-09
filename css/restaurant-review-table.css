@@ -14,8 +14,14 @@
     width: 55px;
     border-radius: 50px;
     float: right;
-    margin-right: 10px;
+    margin-right: 20px;
+    margin-left: -13px;
     margin-bottom: 10px;
+}
+#footer-whole {
+  width: 245px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #top-bar-margin {
@@ -219,7 +225,7 @@ h2 {
 #thumbnail {
   width: 231px;
   height: 150px;
-}  
+}
 
 /* a:link {
   font-family: 'Droid Sans', Arial, sans-serif;
@@ -248,7 +254,7 @@ a:hover {
 
 a.review:visited {
   color: #4682B4;
-}  
+}
 
 a.review:hover {
   color: red;
@@ -332,7 +338,7 @@ img {
 
 #header-image {
   margin-bottom: 50px;
-  height: 600px;
+  height: 550px;
   display: block;
   position: relative;
 }
@@ -350,12 +356,13 @@ img {
   background-attachment:fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   margin-bottom: 50px;
-  height: 600px;
+  height: 550px;
   border-bottom: solid rgba(0,0,0,.4) 5px;
 }
 
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
   #header-image {
     display: none;
   }
@@ -378,7 +385,7 @@ img#phone-photo {
   height: auto;
   margin-bottom: 8px;
   margin-top: 8px;
-}
+} */
 
 .main-hed-phone {
   font-family: "Oswald", Arial, sans-serif;
@@ -388,7 +395,7 @@ img#phone-photo {
     letter-spacing: 1px;
 }
 
-/* ----------------------------- Adverts ----------------------------- */ 
+/* ----------------------------- Adverts ----------------------------- */
 #adwrapper {
     position:fixed;
     bottom:0;

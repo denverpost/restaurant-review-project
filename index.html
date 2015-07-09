@@ -129,10 +129,10 @@
         </div>
     </div> <!-- /#header-image div -->
 
-    <!-- For phones -->
+    <!-- For phones
     <div id="phone-top">
         <div id="top-bar-margin">
-            <!-- <div class="fixed"> -->
+            <!-- <div class="fixed">
             <nav class="top-bar" data-topbar role="navigation" id="nav-bar">
                 <ul class="title-area">
                     <li class="name">
@@ -141,9 +141,9 @@
                     </li>
                 </ul>
             </nav>
-        </div> <!-- Closes top-bar-margin -->
+        </div> <!-- Closes top-bar-margin
 
-        <!-- Social media buttons -->
+        <!-- Social media buttons
         <div class="row" "social-icon-row">
             <div class="large-3 large-offset-8 medium-3 medium-offset-8 small-8 small-offset-4 columns">
                 <ul class="post-meta-social-links text-center no-bullet" id="sticky-inner">
@@ -184,7 +184,7 @@
         <!-- Beginning of map code -->
         <!-- We'll need to include Google Maps, Handlebars for templating, and jQuery for general futzing about -->
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js"></script>        
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js"></script>
         
         <!-- If using Leaflet -->
         <script src="http://cdn.leafletjs.com/leaflet-0.4.5/leaflet.js"></script>
@@ -214,10 +214,10 @@
         </script>
         
         <script type="text/javascript">
-          $(document).ready( function() {       
+          $(document).ready( function() {
             
             // Make sure the spreadsheet is published
-            var published_spreadsheet_url = 'https://docs.google.com/spreadsheet/ccc?key=0Ank6vqQeY7CJdDQwMVVtZFlMdG1JU0xVdENIMFdjYXc#gid=0'; 
+            var published_spreadsheet_url = 'https://docs.google.com/spreadsheet/ccc?key=0Ank6vqQeY7CJdDQwMVVtZFlMdG1JU0xVdENIMFdjYXc#gid=0';
 
             // Get the popup template and compile it using Handlebars
             var source = $("#popup-template").html();
@@ -241,7 +241,7 @@
               key: published_spreadsheet_url,
               element: "map",
               popupTemplate: template
-            });            
+            });
           });
         </script>
         </div>
@@ -325,10 +325,12 @@
         <div id="adframewrapper"></div>
         </center>
     </div>
+    
+    <hr>
 
-    <!-- Social media buttons -->
+    <div id="footer-whole">
+      <!-- Footer social media buttons -->
         <div class="row">
-        <hr>
             <div class="large-12 medium-12 small-12 columns">
                 <ul class="post-meta-social-links text-center no-bullet" id="sticky-inner">
                     <li class="post-meta-social pm-googleplus ho-list">
@@ -353,7 +355,8 @@
             <p style="font-family:'Oswald', Arial, sans-serif; text-align: right">Copyright &copy; 2015, The Denver Post</p>
             </div>
         </div>
-
+        </div>
+        
     <!-- Templates for table-->
     <script id="datatable-template" type="text/x-handlebars-template">
         {{#each elements}} // The following correspond to spreadsheet headers
