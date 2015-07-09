@@ -179,34 +179,34 @@ p.intro {
     float: right;
     }
 a.review-link:link {
-    background: rgba(0,140,186,1.0);
+    background: rgba(0,140,186,.9);
     color: white;
     font-size: 11px;
     font-weight: bold;
     text-decoration: none;
     padding: 3px 7px 3px 7px;
     }
-    a.review-link:hover {
-    background: rgba(0,140,186,.5);
+a.review-link:hover {
+    background: red;
     color: white;
     font-size: 11px;
     font-weight: bold;
     text-decoration: none;
     padding: 3px 7px 3px 7px;
     }
-    a.review-link:visited {
-    background: rgba(0,140,186,1.0);
+a.review-link:visited {
+    /* background: rgba(0,140,186,.9); */
     color: white;
     font-size: 11px;
     font-weight: bold;
     text-decoration: none;
     padding: 3px 7px 3px 7px;
     }
-    h2.intro-hed {
+h2.intro-hed {
         font-family: "Oswald", Arial, sans-serif;
         margin-bottom: 3px;
     }
-    h2 {
+h2 {
         font-family: "Oswald", Arial, sans-serif;
     }
 

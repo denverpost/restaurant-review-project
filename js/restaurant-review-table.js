@@ -105,7 +105,7 @@ function loadDataTable() {
                 null,
                 {
                     type: "select",
-                    values: ['Barbecue', 'Breakfast/lunch', 'Brewpub', 'Burgers and more', 'Cafe and Wine Bar', 'Carnivor emporium', 'Chinese noodle shop', 'Contemporary American']
+                    values: ['Argentine', 'Barbecue', 'Breakfast/lunch', 'Brewpub', 'Cafe and wine bar', 'Carnivore emporium', 'Chinese', 'Contemporary American', 'Deli', 'Desserts', 'Diner', 'Ethiopian', 'French', 'French/North African', 'Indian', 'Italian', 'Japanese', 'Korean', 'Korean barbecue', 'Latin American fusion', 'Malaysian', 'Mediterranean', 'Mexican', 'Pan-Asian', 'Pizza', 'Sandwiches', 'Seafood', 'Southern', 'Spanish', 'Thai', 'Vietnamese']
                 },
                 null, 
                 {
