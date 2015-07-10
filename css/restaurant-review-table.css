@@ -1,8 +1,8 @@
 /* Imported styles - clean up */
 
 .social-icons {
-    height: 48px;
-    width: 48px;
+    height: 38px;
+    width: 38px;
     border-radius: 50px;
     float: right;
     margin-right: 5px;
@@ -169,10 +169,7 @@ hr.panel-hr {
     height: 4px;
     background-color: #808080;
 }
-p.anchor-links {
-    font-family: "Oswald", Arial, sans-serif;
-    font-size: 16px;
-}
+
 #table-top-margin {
     margin-top: 20px;
 }
@@ -181,33 +178,35 @@ p.intro {
     font-size: 20px;
     line-height: 30px;
 }
+
+/* Review buttons in table */
 .review-link {
     float: right;
     }
-a.review-link:link {
-    background: rgba(0,140,186,.9);
+    
+a.review-link {
+    background: rgba(161, 39, 51, 0.85);
     color: white;
     font-size: 11px;
     font-weight: bold;
     text-decoration: none;
     padding: 3px 7px 3px 7px;
     }
+
 a.review-link:hover {
-    background: red;
+    background: rgba(70, 130, 180, 1.0);
     color: white;
-    font-size: 11px;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 3px 7px 3px 7px;
     }
-a.review-link:visited {
-    /* background: rgba(0,140,186,.9); */
-    color: white;
-    font-size: 11px;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 3px 7px 3px 7px;
-    }
+    
+a {
+  color: rgba(70, 130, 180, 1.0);
+  }
+
+a:hover {
+  color: rgba(161, 39, 51, 0.85);
+  }
+
+/* Headlines */
 h2.intro-hed {
         font-family: "Oswald", Arial, sans-serif;
         margin-bottom: 3px;
@@ -225,39 +224,6 @@ h2 {
 #thumbnail {
   width: 231px;
   height: 150px;
-}
-
-/* a:link {
-  font-family: 'Droid Sans', Arial, sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  color: #4682B4;
-  text-decoration: none;
-} */
-
-/* a:visited {
-  color: #4682B4;
-}  */
-
-a:hover {
-  color: red;
-}
-
-/* a.review:link {
-  font-family: 'Droid Sans', Arial, sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  font-weight: 500;
-  text-decoration: none;
-  text-color: white;
-} */
-
-a.review:visited {
-  color: #4682B4;
-}
-
-a.review:hover {
-  color: red;
 }
 
 #popup {
@@ -293,6 +259,21 @@ a.review:hover {
   margin-top: -4px;
 }
 
+#star-legend {
+  width: 100px;
+  height: 17px;
+  margin-top: -2px;
+}
+
+ul li {
+  display: inline;
+  font-size: 14px;
+}
+
+ul#map-legend {
+  list-style-type: none;
+}
+
 #menuheader {
   font-weight: bold;
   padding-left: 25px;
@@ -326,7 +307,18 @@ img {
 .button {
   padding: 10px;
   margin-bottom: 0px;
+  background-color: rgba(161, 39, 51, 0.85);
 }
+
+a.button {
+  background-color: rgba(161, 39, 51, 0.85);
+  color: white;
+}
+
+a.button:hover {
+    background: rgba(70, 130, 180, 1.0);
+    color: white;
+    }
 
 #map-container {
     border: solid 2px #777;
@@ -338,7 +330,7 @@ img {
 
 #header-image {
   margin-bottom: 50px;
-  height: 550px;
+  height: 500px;
   display: block;
   position: relative;
 }
@@ -350,15 +342,16 @@ img {
   top: 0;
   left: 0;
   bottom: 0;
-  right: 0;
+  /* right: 0; */
+  width: 100%;
+  height: 500px;
   position: absolute;
   z-index: -1;
-  background-attachment:fixed;
+  background-attachment: absolute;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   margin-bottom: 50px;
-  height: 550px;
   border-bottom: solid rgba(0,0,0,.4) 5px;
 }
 
@@ -385,7 +378,7 @@ img#phone-photo {
   height: auto;
   margin-bottom: 8px;
   margin-top: 8px;
-} */
+}
 
 .main-hed-phone {
   font-family: "Oswald", Arial, sans-serif;
@@ -393,6 +386,29 @@ img#phone-photo {
     font-weight: bold;
     line-height: 70px;
     letter-spacing: 1px;
+} */
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 500px) {
+  h1.main-hed {
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 70px;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #header-image {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #header-image::after {
+    height: 400px;
+  }
 }
 
 /* ----------------------------- Adverts ----------------------------- */
